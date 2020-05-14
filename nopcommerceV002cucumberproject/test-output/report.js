@@ -1,4 +1,424 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:Features/Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:Features/Customers.feature");
+formatter.feature({
+  "name": "Customers",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.background({
+  "name": "Below are the common steps for each scenario",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User launch Chrome browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Steps.user_launch_Chrome_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User opens URL \"https://admin-demo.nopcommerce.com/login?\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.user_opens_URL(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters Emails as \"admin@yourstore.com\" and Password as \"admin\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.user_enters_Emails_as_and_Password_as(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on login",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.click_on_login()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User can view Dashboard",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.user_can_view_Dashboard()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Add a new customer",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Sanity"
+    }
+  ]
+});
+formatter.step({
+  "name": "User clicks on customers Menu",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.user_clicks_on_customers_Menu()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on customer Menu Items",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.user_clicks_on_customer_Menu_Items()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on Add new button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.click_on_Add_new_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User can view Add new customer page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.user_can_view_Add_new_customer_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enter customer info",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.user_enter_customer_info()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on save button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.click_on_save_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User can view confirmation message \"The new customer has been added successfully.\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.user_can_view_confirmation_message(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Close browser",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.close_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.background({
+  "name": "Below are the common steps for each scenario",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User launch Chrome browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Steps.user_launch_Chrome_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User opens URL \"https://admin-demo.nopcommerce.com/login?\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.user_opens_URL(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters Emails as \"admin@yourstore.com\" and Password as \"admin\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.user_enters_Emails_as_and_Password_as(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on login",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.click_on_login()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User can view Dashboard",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.user_can_view_Dashboard()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Search customer by EmailID",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Sanity"
+    }
+  ]
+});
+formatter.step({
+  "name": "User clicks on customers Menu",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.user_clicks_on_customers_Menu()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on customer Menu Items",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.user_clicks_on_customer_Menu_Items()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter customer email",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.enter_customer_email()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on search button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.user_clicks_on_search_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should find the email in search table",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.user_should_find_the_email_in_search_table()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Close browser",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.close_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.background({
+  "name": "Below are the common steps for each scenario",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User launch Chrome browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Steps.user_launch_Chrome_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User opens URL \"https://admin-demo.nopcommerce.com/login?\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.user_opens_URL(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters Emails as \"admin@yourstore.com\" and Password as \"admin\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.user_enters_Emails_as_and_Password_as(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on login",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.click_on_login()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User can view Dashboard",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.user_can_view_Dashboard()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Search customer by Name",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Regression"
+    }
+  ]
+});
+formatter.step({
+  "name": "User clicks on customers Menu",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.user_clicks_on_customers_Menu()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on customer Menu Items",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.user_clicks_on_customer_Menu_Items()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter customer FirstName",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.enter_customer_FirstName()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter customer LastName",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.enter_customer_LastName()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on search button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.user_clicks_on_search_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should find the name in search table",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.user_should_find_the_name_in_search_table()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Close browser",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.close_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.uri("file:Features/Login.feature");
 formatter.feature({
   "name": "Login Test",
   "description": "",
@@ -78,11 +498,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "LogOut page title should be \"Your store. Login\"",
+  "name": "Page title should be \"Your store. Login\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Steps.logout_page_title_should_be(String)"
+  "location": "Steps.page_title_should_be(String)"
 });
 formatter.result({
   "status": "passed"
@@ -158,8 +578,8 @@ formatter.examples({
     },
     {
       "cells": [
-        "admin123@yourstore.com",
-        "admin123"
+        "admin@yourstore.com",
+        "admin"
       ]
     }
   ]
@@ -291,7 +711,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User enters Emails as \"admin123@yourstore.com\" and Password as \"admin123\"",
+  "name": "User enters Emails as \"admin@yourstore.com\" and Password as \"admin\"",
   "keyword": "And "
 });
 formatter.match({
@@ -318,8 +738,7 @@ formatter.match({
   "location": "Steps.page_title_should_be(String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepDefinitions.Steps.page_title_should_be(Steps.java:107)\r\n\tat ✽.Page title should be \"Dashboard / nopCommerce administration\"(file:Features/Login.feature:22)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "User click on logout link",
@@ -329,7 +748,7 @@ formatter.match({
   "location": "Steps.user_click_on_logout_link()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Page title should be \"Your store. Login\"",
@@ -339,7 +758,7 @@ formatter.match({
   "location": "Steps.page_title_should_be(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Close browser",
@@ -349,6 +768,6 @@ formatter.match({
   "location": "Steps.close_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 });

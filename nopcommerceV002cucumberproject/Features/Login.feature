@@ -9,7 +9,7 @@ Scenario: Successful login with valid credentials
    And Click on login
    Then Page title should be "Dashboard / nopCommerce administration"
    When User click on logout link
-   Then LogOut page title should be "Your store. Login"
+   Then Page title should be "Your store. Login"
    Then Close browser
 
 @Regression

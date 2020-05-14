@@ -98,14 +98,15 @@ public class Steps extends BaseClass {
 		
 		logger.info("*********************Verifying Dashboard title page*************************");
 		String act_title=driver.getTitle();
-		if(act_title.equals(title))
-		{
-			Assert.assertTrue(true);
-		}
-		else if(driver.getPageSource().contains("Login was unsuccessful"))
+	
+	    if(driver.getPageSource().contains("Login was unsuccessful"))
 		{
 			Assert.assertTrue(false);
 		}
+	    else
+	    {
+	    	Assert.assertEquals(title,act_title);
+	    }
 	}
 
 	@When("User click on logout link")
@@ -116,25 +117,7 @@ public class Steps extends BaseClass {
 	   Thread.sleep(3000);
 	}
    
-	
-	@Then("LogOut page title should be {string}")
-	public void logout_page_title_should_be(String title) throws InterruptedException {
-	    
-		logger.info("**************************Verifying logout title****************************");
-		String act_title=driver.getTitle();
-		if(act_title.equals(title))
-		{   
-			logger.info("*****************Logout page title matched*****************************");
-			Assert.assertTrue(true);
-		}
-		else
-		{   
-			logger.warn("**********************Logout pagetitle did not matched*******************");
-			Assert.assertTrue(false);
-		}
-	}
-	
-	
+		
 	@Then("Close browser")
 	public void close_browser() {
 		
