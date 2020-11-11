@@ -182,7 +182,7 @@ public class Steps extends BaseClass {
 		addcust.setCustomerRole("Forum Moderators");
 		addcust.setManagerOfVendor("Vendor 1");
 		addcust.setAdminComment("This is for testing");
-        Thread.sleep(3000);
+        Thread.sleep(10000);
 	    
 	}
 
