@@ -121,7 +121,7 @@ public class AddCustomerPage {
 	 		          break;
 	 			}
 	 			
-	 		   driver.findElement(By.xpath("//span[@class='k-icon k-i-arrow-w']")).click();
+	 		   driver.findElement(By.xpath("//body/div[4]/div[1]/div[1]/div[1]/a[1]/span[1]")).click();
 	 		   Thread.sleep(3000);
 	 			
 	 	 }
