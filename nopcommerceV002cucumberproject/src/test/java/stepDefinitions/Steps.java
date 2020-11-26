@@ -11,6 +11,7 @@ import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
@@ -48,10 +49,10 @@ public class Steps extends BaseClass {
 			driver= new FirefoxDriver();
 			
 		}
-		else if(br.equals("ie"))
+		else if(br.equals("edge"))
 		{
-			System.setProperty("webdriver.ie.driver", configProp.getProperty("iepath"));
-			driver=new InternetExplorerDriver();
+			System.setProperty("webdriver.edge.driver", configProp.getProperty("edgepath"));
+			driver=new EdgeDriver();
 		}
 		
 		logger.info("**************Launching browser************************");

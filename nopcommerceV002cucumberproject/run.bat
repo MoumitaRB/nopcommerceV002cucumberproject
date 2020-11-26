@@ -1,4 +1,2 @@
-cd \
-D:
-cd D:\JavaWorkspace\nopcommerceV002cucumberproject
-mvn clean install
+cd C:\Users\moumi\git\nopcommerceV002cucumberproject\nopcommerceV002cucumberproject
+mvn clean test
