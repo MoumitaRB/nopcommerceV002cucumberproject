@@ -21,10 +21,9 @@ public class AddCustomerPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	By lnkCustomers_menu=By.xpath("//body[@class='skin-blue sidebar-mini']/div[@class='wrapper']/div[@class='main-sidebar']"
-			+ "/div[@class='sidebar']/ul[@class='sidebar-menu tree']/li[4]/a[1]/span[1]");
-    By lnkCustomers_menuitems=By.xpath("//span[@class='menu-item-title'][contains(text(),'Customers')]");
-    By btnAddNew=By.xpath("//a[@class='btn bg-blue']");
+	By lnkCustomers_menu=By.xpath("//body[1]/div[3]/aside[1]/div[1]/div[4]/div[1]/div[1]/nav[1]/ul[1]/li[4]/a[1]/p[1]");
+    By lnkCustomers_menuitems=By.xpath("//body[1]/div[3]/aside[1]/div[1]/div[4]/div[1]/div[1]/nav[1]/ul[1]/li[4]/ul[1]/li[1]/a[1]/p[1]");
+    By btnAddNew=By.xpath("//body/div[3]/div[1]/form[1]/div[1]/div[1]/a[1]");
     By txtEmail= By.id("Email");
     By txtPassword=By.id("Password");
     By txtFirstName=By.id("FirstName");
@@ -122,7 +121,7 @@ public class AddCustomerPage {
 	 			}
 	 			
 	 		   driver.findElement(By.xpath("//body/div[4]/div[1]/div[1]/div[1]/a[1]/span[1]")).click();
-	 		   Thread.sleep(3000);
+	 		   Thread.sleep(2000);
 	 			
 	 	 }
 	 		

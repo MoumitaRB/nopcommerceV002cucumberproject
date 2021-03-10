@@ -12,7 +12,7 @@ import cucumber.api.junit.Cucumber;
    dryRun=false,
    monochrome=true,
    tags= {"@Regression,@Sanity"},
-   plugin= {"pretty", "html:test-output"}
+   plugin= {"pretty", "html:test-output","json:target/cucumber-reports/CucumberTestReport.json"}
    
 		   
 		   ) 
